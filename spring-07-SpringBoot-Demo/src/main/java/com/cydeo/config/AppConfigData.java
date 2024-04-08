@@ -6,17 +6,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 
-@Data
+@Data  //to have getter and setter
 @Configuration
 public class AppConfigData {
-
-    @Value("${username}")
-    private String userName;
-
+    @Value("${username}") //we are trying to bring this value from somewhere else
+    private String UserName;
     @Value("${password}")
-    private String password;
-
+    private String Password;
     @Value("${url}")
-    private String url;
+    private String Url;
 
 }
